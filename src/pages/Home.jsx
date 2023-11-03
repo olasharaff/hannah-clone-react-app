@@ -34,7 +34,7 @@ export default function Home() {
                 <p className="max-w-[440px] text-sm text-white mb-16">
                   {item.herocontent}
                 </p>
-                <div className="flex lg:gap-7 gap-4 mb-6 lg:pb-5 flex-wrap justify-center items-center">
+                <div className="flex lg:gap-7 gap-4 mb-6 lg:pb-5 flex-wrap lg:justify-start justify-center items-center">
                   <button className="flex items-center whitespace-nowrap bg-white text-[#7234F5] lg:text-base text-sm lg:px-5 lg:py-3 px-3 py-2  rounded-full">
                     Android <FaGooglePlay className="ml-3 " />
                   </button>
