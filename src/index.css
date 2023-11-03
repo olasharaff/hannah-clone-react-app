@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/diagramm');
+
+body{
+font-family: 'Diagramm', sans-serif;
+}
+.home-style{
+    background-image: url('./assets/img/BG.svg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+/*  Tailwind configuration */
+
+@layer utilities {
+    .text-gradient {
+        background-clip: text;
+        color: transparent;
+    }
+
+    .text-gradient-from-to {
+        background-image: linear-gradient(92.65deg, rgba(114, 52, 245, 0) -2.55%, rgba(114, 52, 245, 0.37) 47.76%, rgba(114, 52, 245, 0) 93.96%),
+            linear-gradient(0deg, #FFE6C4, #FFE6C4);
+        background-clip: text;
+        color: transparent;
+       
+    }
+}
+
+.movie-animation {
+    animation: floatAndMoveLeft 10s linear infinite;
+}
+
+.movie-animation:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+
+@keyframes floatAndMoveLeft {
+
+    0%,
+    100% {
+        transform: translateX(100%) translateY(0%);
+    }
+
+    50% {
+        transform: translateX(-100%) translateY(-10px);
+    }
+
+    75% {
+        transform: translateX(-100%) translateY(10px);
+    }
+}
