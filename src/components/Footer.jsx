@@ -2,6 +2,7 @@ import React from "react";
 import footer from "../assets/img/footer-logo.svg";
 import * as Fa from 'react-icons/fa'
 import {GrAppleAppStore} from 'react-icons/gr'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -34,8 +35,15 @@ export default function Footer() {
           <div className="lg:my-0 my-3">
             <h1 className="font-semibold mb-3">Legal</h1>
             <ul className="space-y-4 text-sm">
-              <li>Terms Privacy</li>
-              <li>Policy AML Policy</li>
+              <li>
+                <Link to="/term">Terms</Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/aml-policy">AML Policy</Link>
+              </li>
             </ul>
           </div>
           <div className="lg:my-0 my-3">
