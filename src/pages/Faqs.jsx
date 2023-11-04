@@ -35,14 +35,14 @@ export default function Faqs() {
               className={`cursor-pointer ${faqsOpen[index] ? "bg-black" : ""}`}
               onClick={() => handleClickFaqs(index)}
             >
-              <div className="px-10 border-b border-gray-300 py-7">
+              <div className="lg:px-10 px-6 border-b border-gray-300 py-7">
                 <div
-                  className={`flex justify-between ${
+                  className={`flex justify-between items-center ${
                     faqsOpen[index] ? "text-white" : ""
                   } mb-6`}
                 >
                   <h1 className="font-bold text-lg">{faq.question}</h1>
-                  <p className="border border-gray-200 px-4 py-2 rounded-lg">
+                  <p className="border border-gray-200 lg:text-base lg:px-4 lg:py-2 text-xs px-3 py-2 rounded-lg">
                     <HiOutlinePlus />
                   </p>
                 </div>
@@ -65,14 +65,14 @@ export default function Faqs() {
               className={`cursor-pointer ${faqsOpen[index] ? "bg-black" : ""}`}
               onClick={() => handleClickFaqs(index)}
             >
-              <div className="px-10 border-b border-gray-300 py-7">
+              <div className="lg:px-10 px-6 border-b border-gray-300 py-7">
                 <div
-                  className={`flex justify-between ${
+                  className={`flex justify-between items-center ${
                     faqsOpen[index] ? "text-white" : ""
                   } mb-6`}
                 >
                   <h1 className="font-bold text-lg">{sec.question}</h1>
-                  <p className="border border-gray-200 px-4 py-2 rounded-lg">
+                  <p className="border border-gray-200 lg:text-base lg:px-4 lg:py-2 text-xs px-3 py-2 rounded-lg">
                     <HiOutlinePlus />
                   </p>
                 </div>
