@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import {BsArrow90DegLeft} from "react-icons/bs"
+import { Link } from 'react-router-dom'
 
 
 export default function Register() {
@@ -26,7 +28,10 @@ export default function Register() {
     <>
       <div className="max-w-6xl px-9 mx-auto mt-9">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="mb-10">Login</h1>
+          <h1 className="mb-10">Create an account </h1>
+          <Link to="/" className="fixed top-10 left-5 text-xl hover:border-8 hover:border-[#7234F51A] hover:rounded-full p-2 ">
+            <BsArrow90DegLeft />
+          </Link>
 
           <div className="w-full">
             <form className="flex flex-col" onSubmit={onSubmitForm}>
@@ -116,7 +121,7 @@ export default function Register() {
                 </span>
               </div>
               <div className="text-center mt-6 mb-6">
-                <button className="text-[#7234F5] lg:px-28 lg:py-4 rounded-full bg-[#7234F51A]">
+                <button className="text-[#7234F5] lg:text-base text-sm lg:px-28 lg:py-4 px-10 py-2 rounded-full bg-[#7234F51A]">
                   Continue
                 </button>
               </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {HomeDatas1} from '../data/HomeData';
 import {GrAppleAppStore} from 'react-icons/gr'
 import { FaGooglePlay } from "react-icons/fa";
@@ -11,6 +11,55 @@ import Wallet from "../components/sub-components/Wallet";
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState('');
   const [sliderValue, setSliderValue] = useState(50);
+
+  const [rateSettings, setRateSettings] = useState();
+  const [isHowMuch, setIsHowMuch] = useState(0)
+
+useEffect(() => {
+  if (sliderValue <= 1) {
+    const calculatedRate =  500;
+    setRateSettings(calculatedRate);
+  }  if (sliderValue > 1) {
+    const calculatedRate = 520;
+    setRateSettings(calculatedRate);
+  }  if (sliderValue >= 5) {
+    const calculatedRate = 580;
+    setRateSettings(calculatedRate);
+  }
+   if (sliderValue > 20) {
+     const calculatedRate = 800;
+     setRateSettings(calculatedRate);
+   }
+   if (sliderValue > 50) {
+     const calculatedRate = 830;
+     setRateSettings(calculatedRate);
+   }
+
+  //  for How much you get in naira
+
+   if (sliderValue === 1) {
+     const calculatedRate = sliderValue * 500;
+     setIsHowMuch(calculatedRate);
+   }
+   if (sliderValue >= 1) {
+     const calculatedRate = sliderValue * 520;
+     setIsHowMuch(calculatedRate);
+   }
+   if (sliderValue >= 5) {
+     const calculatedRate = sliderValue * 580;
+     setIsHowMuch(calculatedRate);
+   }
+   if (sliderValue > 20) {
+     const calculatedRate = sliderValue * 800;
+     setIsHowMuch(calculatedRate);
+   }
+   if (sliderValue > 50) {
+     const calculatedRate = sliderValue * 830;
+     setIsHowMuch(calculatedRate);
+   }
+
+   
+}, [sliderValue]);
 
   const handleSliderChange = (event) => {
     setSliderValue(event.target.value);
@@ -147,7 +196,7 @@ export default function Home() {
                   Rate
                 </h1>
                 <p className="lg:text-5xl text-lg font-bold text-gray-300">
-                  {sliderValue}.00
+                  {rateSettings}.00
                 </p>
               </div>
               <div>
@@ -155,7 +204,11 @@ export default function Home() {
                   How much you would get
                 </h1>
                 <p className="lg:text-5xl text-lg font-bold text-gray-300">
-                  {sliderValue}.00
+                  ₦
+                  {isHowMuch
+                    .toString()
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  .00
                 </p>
               </div>
             </div>

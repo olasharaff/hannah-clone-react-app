@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Headers from "../data/HeaderData";
-import headerLogo from "../assets/img/footer-logo.svg";
+import headerLogo from "../assets/img/Navlogo.svg";
 import { Link } from "react-router-dom";
 import {FaBars} from "react-icons/fa"
 import {AiOutlineClose} from "react-icons/ai"
@@ -24,7 +24,7 @@ export default function Header() {
   
   return (
     <>
-      <header className="bg-blue-800 text-white border-b border-gray-600">
+      <header className="bg-[#7234F5] text-white border-b border-gray-400">
         <nav className="flex justify-between items-center max-w-6xl mx-auto px-6 py-10 ">
           <div>
             <Link to="/">
@@ -44,7 +44,9 @@ export default function Header() {
               </li>
             ))}
             <button className="px-8 py-3 bg-[#FFE6C4] text-black text-sm rounded-3xl">
-              <Link to="/register" target="_blank">Create an account</Link>
+              <Link to="/register" target="_blank">
+                Create an account
+              </Link>
             </button>
           </ul>
 
@@ -58,8 +60,8 @@ export default function Header() {
         </nav>
         <div className="">
           {isMenuOpen && (
-            <div className="sticky top-19 left-0 w-full h-full  bg-blue-800 z-50">
-              <ul className="flex flex-col items-center justify-center gap-10 pt-6">
+            <div className="sticky top-19 left-0 w-full h-full  bg-[#7234F5] z-50">
+              <ul className="flex flex-col items-center justify-center gap-10 pt-6 pb-6">
                 {Headers.map((items, index) => (
                   <li
                     key={index}

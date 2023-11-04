@@ -24,7 +24,7 @@ function App() {
     <>
       <Router>
         {hiddenRoutes.includes(window.location.pathname) ? null : <Header1 />}
-        <Suspense fallback={<Loading/>}>
+        <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/features" element={<Features />} />
@@ -37,9 +37,10 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="log-in" element={<LogIn />} />
             <Route path="/register" element={<Register />} />
+            
           </Routes>
         </Suspense>
-       {hiddenRoutes.includes(window.location.pathname) ? null : <Footer />}
+        {hiddenRoutes.includes(window.location.pathname) ? null : <Footer />}
       </Router>
     </>
   );
