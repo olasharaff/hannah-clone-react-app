@@ -6,6 +6,8 @@ import {FaBars} from "react-icons/fa"
 import {AiOutlineClose} from "react-icons/ai"
 
 export default function Header() {
+
+  
    const [isMenuOpen, setIsMenuOpen] = useState(false);
    const [activeContent, setActiveContent] = useState(0);
 
@@ -42,7 +44,7 @@ export default function Header() {
               </li>
             ))}
             <button className="px-8 py-3 bg-[#FFE6C4] text-black text-sm rounded-3xl">
-              Create an account
+              <Link to="/register" target="_blank">Create an account</Link>
             </button>
           </ul>
 
@@ -70,7 +72,7 @@ export default function Header() {
                   </li>
                 ))}
                 <button className="px-8 py-3 bg-[#FFE6C4] text-black text-sm rounded-3xl mt-1">
-                  Create an account
+                  <Link to="/register">Create an account</Link>
                 </button>
               </ul>
             </div>

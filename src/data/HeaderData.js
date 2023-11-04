@@ -27,7 +27,7 @@ const Headers = [
   {
     id: 6,
     text: "I have an account. Log in",
-    to: "/features",
+    to: "/log-in",
   },
 ];
 

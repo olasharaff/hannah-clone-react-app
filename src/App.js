@@ -1,8 +1,9 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header1 from "./components/Header1";
-import Header2 from "./components/Header2";
+
 import Footer from "./components/Footer";
+import Loading from "./components/Loading";
 const Home = lazy(() => import("./pages/Home"));
 const Features = lazy(() => import("./pages/Features"));
 const About = lazy(() => import("./pages/About"));
@@ -16,13 +17,14 @@ const AmlPolicy = lazy (() => import ("./pages/LegalSupport/AmlPolicy"))
 const Terms = lazy(() => import("./pages/LegalSupport/Terms"))
 
 function App() {
+  const hiddenRoutes = ["/log-in", "/register"];
 
-  const isMainPage = window.location.pathname === "/"
+  
   return (
     <>
       <Router>
-        {isMainPage ? <Header1 /> : <Header2 />}
-        <Suspense fallback={<div>Loading .......</div>}>
+        {hiddenRoutes.includes(window.location.pathname) ? null : <Header1 />}
+        <Suspense fallback={<Loading/>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/features" element={<Features />} />
@@ -37,7 +39,7 @@ function App() {
             <Route path="/register" element={<Register />} />
           </Routes>
         </Suspense>
-        <Footer />
+       {hiddenRoutes.includes(window.location.pathname) ? null : <Footer />}
       </Router>
     </>
   );
