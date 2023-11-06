@@ -12,7 +12,7 @@ import Techcabal from "../assets/img/Techcabal.svg";
 export default function Slider() {
     SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
-    <div className='mt-12 mb-12'>
+    <div className="mt-12 mb-12">
       <div className="bg-[#F5F0FE]">
         <Swiper
           slidesPerView={1}
@@ -26,6 +26,7 @@ export default function Slider() {
             <div className="flex flex-col justify-center items-center mx-auto max-w-xl  text-center overflow-hidden h-[320px] px-9 mb-9 mt-9">
               <img
                 src="https://www.hannahapp.com/assets/images/avatar.png"
+                loading="lazy"
                 alt="index"
                 className="rounded-full mb-5"
               />
@@ -40,15 +41,15 @@ export default function Slider() {
         </Swiper>
       </div>
       <div className="flex px-9 justify-center items-center gap-4 mb-6 mt-16">
-        <img className="lg:w-[150px] w-10" src={punch} alt="steam-ebay" />
-        <img
+        <img   loading="lazy" className="lg:w-[150px] w-10" src={punch} alt="steam-ebay" />
+        <img  loading="lazy"
           className="lg:w-[150px] w-10"
           src={tribune}
           alt="bitcoin-van-seph"
         />
-        <img className="lg:w-[150px] w-10" src={legit} alt="Nord-razor-nike" />
-        <img className="lg:w-[150px] w-10" src={premium} alt="Itunes-google" />
-        <img className="lg:w-[200px] w-10" src={Techcabal} alt="americaW" />
+        <img  loading="lazy" className="lg:w-[150px] w-10" src={legit} alt="Nord-razor-nike" />
+        <img  loading="lazy" className="lg:w-[150px] w-10" src={premium} alt="Itunes-google" />
+        <img  loading="lazy" className="lg:w-[200px] w-10" src={Techcabal} alt="americaW" />
       </div>
     </div>
   );

@@ -32,19 +32,21 @@ export default function About() {
         }`}
       >
         <img
+          loading="lazy"
           className="lg:max-w-[200px] max-w-[100px]"
           src={steam}
           alt="steam-ebay"
         />
         <img
+          loading="lazy"
           className="lg:max-w-md max-w-[200px]"
           src={bitcoin}
           alt="bitcoin-van-seph"
         />
-        <img className="lg:max-w-lg" src={nord} alt="Nord-razor-nike" />
-        <img className="lg:w-96" src={itunes} alt="Itunes-google" />
-        <img className="lg:max-w-lg" src={americaW} alt="americaW" />
-        <img
+        <img   loading="lazy" className="lg:max-w-lg" src={nord} alt="Nord-razor-nike" />
+        <img   loading="lazy" className="lg:w-96" src={itunes} alt="Itunes-google" />
+        <img   loading="lazy" className="lg:max-w-lg" src={americaW} alt="americaW" />
+        <img  loading="lazy" 
           className="lg:max-w-xs max-w-[200px]"
           src={americaT}
           alt="americaT"

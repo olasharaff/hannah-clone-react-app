@@ -15,6 +15,7 @@ const Register = lazy(() => import("./pages/Register"));
 const PrivacyPolicy = lazy(() => import("./pages/LegalSupport/PrivacyPolicy")); ;
 const AmlPolicy = lazy (() => import ("./pages/LegalSupport/AmlPolicy"))
 const Terms = lazy(() => import("./pages/LegalSupport/Terms"))
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   const hiddenRoutes = ["/log-in", "/register"];
@@ -32,6 +33,8 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/faqs" element={<Faqs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/404" element={<NotFound />} />
             <Route path="/term" element={<Terms />} />
             <Route path="/aml-policy" element={<AmlPolicy />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

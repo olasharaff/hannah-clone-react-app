@@ -5,52 +5,74 @@ import {GrAppleAppStore} from 'react-icons/gr'
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  
   return (
     <footer className="max-w-6xl mx-auto px-6 mb-9 mt-5">
-      <div className="flex lg:text-none lg:justify-between items-center justify-center mb-8 flex-wrap">
-        <div className="max-w-[350px]">
-          <img src={footer} alt="footer-logo" className="mb-6" />
-          <h1 className="text-lg ">
+      <div className="flex lg:text-none lg:justify-between justify-center mb-8 flex-wrap w-full">
+        <div className="lg:max-w-[350px] max-w-sm flex lg:justify-normal lg:text-start text-center justify-center flex-col mb-6 ">
+          <img
+            src={footer}
+            alt="footer-logo"
+            loading="lazy"
+            className="lg:mb-6 mb-2 lg:w-[100px] text-center"
+          />
+          <h1 className="lg:text-lg text-md">
             Hannah allows you to convert your gift cards & crypto to cash
             instantly.
           </h1>
         </div>
-        <div className="flex lg:gap-12 gap-5 flex-wrap items-center">
-          <div className="lg:my-0 my-3">
-            <h1 className="font-semibold mb-3">Features</h1>
-            <ul className="space-y-4 text-sm">
-              <li>Buy Gift cards</li>
-              <li>Sell Gift cards</li>
-              <li>Trade Crypto</li>
-              <li>Pay Bills</li>
+        <div className="flex lg:gap-12 gap-5 flex-wrap ">
+          <div className="lg:my-0 my-3 lg:w-32 w-40">
+            <h1 className="font-semibold mb-6">Features</h1>
+            <ul className="text-sm">
+              <li className="mb-3">
+                <Link to="/">Buy Gift cards</Link>
+              </li>
+              <li className="mb-3">
+                <Link to="/">Sell Gift cards</Link>
+              </li>
+              <li className="mb-3">
+                <Link to="/">Trade Crypto</Link>
+              </li>
+              <li className="mb-3">
+                <Link to="/">Pay Bills</Link>
+              </li>
             </ul>
           </div>
-          <div className="lg:my-0 my-3">
-            <h1 className="font-semibold mb-3">Company</h1>
-            <ul className="space-y-4 text-sm">
-              <li>About</li>
-              <li>Blog</li>
+          <div className="lg:my-0 my-3 lg:w-32 w-40">
+            <h1 className="font-semibold mb-6">Company</h1>
+            <ul className="text-sm">
+              <li className="mb-3">
+                <Link to="/about">About</Link>
+              </li>
+              <li className="mb-3">
+                <Link to="/404">Blog</Link>
+              </li>
             </ul>
           </div>
-          <div className="lg:my-0 my-3">
-            <h1 className="font-semibold mb-3">Legal</h1>
-            <ul className="space-y-4 text-sm">
-              <li>
+          <div className="lg:my-0 my-3 lg:w-32 w-40">
+            <h1 className="font-semibold mb-6">Legal</h1>
+            <ul className=" text-sm">
+              <li className="mb-3">
                 <Link to="/term">Terms</Link>
               </li>
-              <li>
+              <li className="mb-3 w-40">
                 <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
-              <li>
+              <li className="mb-3">
                 <Link to="/aml-policy">AML Policy</Link>
               </li>
             </ul>
           </div>
-          <div className="lg:my-0 my-3">
-            <h1 className="font-semibold mb-3">Support</h1>
-            <ul className="space-y-4 text-sm">
-              <li>FAQs</li>
-              <li>Contact</li>
+          <div className="lg:my-0 my-3 lg:w-32 w-40">
+            <h1 className="font-semibold mb-6">Support</h1>
+            <ul className="text-sm">
+              <li className="mb-3">
+                <Link to="/404">FAQs</Link>
+              </li>
+              <li className="mb-3">
+                <Link to="/contact">Contact</Link>
+              </li>
             </ul>
           </div>
         </div>

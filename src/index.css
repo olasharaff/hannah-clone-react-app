@@ -101,6 +101,9 @@ font-family: 'Diagramm', sans-serif;
         width: 80%;
         /* Adjust the size for smaller screens */
     }
+    .notfound-img {
+        width: 60%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -108,4 +111,7 @@ font-family: 'Diagramm', sans-serif;
         width: 70%;
         /* Further adjust the size for even smaller screens */
     }
+         .notfound-img {
+             width: 70%;
+         }
 }

@@ -12,7 +12,7 @@ const Headers = [
   {
     id: 3,
     text: "Blog",
-    to: "/blog",
+    to: "/404",
   },
   {
     id: 4,

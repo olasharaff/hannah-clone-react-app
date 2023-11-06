@@ -19,6 +19,7 @@ import { FaGooglePlay } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 import { TfiWorld } from "react-icons/tfi";
 import Slider from '../components/Slider';
+import { BsArrowRightShort } from 'react-icons/bs';
 
 
 export default function Features() {
@@ -36,38 +37,45 @@ export default function Features() {
                 In Less than 5mins.
               </p>
               <div className="mb-6">
-                <span className="lg:px-16 lg:py-5 lg:text-base px-6 py-3 text-sm bg-[#FFE6C4] rounded-full">
-                  <Link>Get Started</Link>
-                </span>
+                <button className="flex items-center whitespace-nowrap border-none bg-white text-[#7234F5] lg:text-base text-sm lg:px-10 lg:py-5 px-6 py-3  rounded-full">
+                  <Link> Get Started </Link>{" "}
+                  <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+                </button>
               </div>
             </div>
             <div className="relative w-full lg:pb-1 pb-80 lg:mx-0 mx-4 lg:overflow-visible overflow-hidden">
               <img
+                loading="lazy"
                 src={glare1}
                 alt=""
                 className="absolute lg:right-0 right-28"
               />
               <img
+                loading="lazy"
                 src={glare3}
                 alt=""
                 className="absolute lg:right-40 lg:-top-2 top-0 "
               />
               <img
+                loading="lazy"
                 src={vanila}
                 alt=""
                 className="lg:w-[350px] w-[250px] absolute lg:top-2 lg:right-0 left-32 z-40"
               />
               <img
+                loading="lazy"
                 src={ebay}
                 alt=""
                 className="lg:w-[350px] w-[250px] absolute lg:bottom-14 lg:right-24 lg:left-0 top-10 left-11 z-30"
               />
               <img
+                loading="lazy"
                 src={steam}
                 alt=""
                 className="lg:w-[350px] w-[250px] absolute lg:-bottom-7 lg:right-56 bottom-16 z-20"
               />
               <img
+                loading="lazy"
                 src={glare2}
                 alt="glare-3"
                 className="absolute lg:bottom-52 lg:-left-16 -bottom-2 z-50"
@@ -80,7 +88,7 @@ export default function Features() {
       <div className=" feature-section2">
         <div className="max-w-6xl px-9 mx-auto flex justify-center lg:flex-nowrap flex-wrap py-8 gap-6">
           <div className="lg:my-36 my-6">
-            <img src={image} alt="images-group " />
+            <img src={image} alt="images-group " loading="lazy" />
           </div>
           <div className="lg:my-36 mb-24 px-2 lg:text-start text-center">
             <h1 className="text-white lg:max-w-lg lg:text-[70px] text-[50px]  font-extrabold">
@@ -99,7 +107,7 @@ export default function Features() {
       <div className="px-6">
         <div className="max-w-6xl px-9 mx-auto border-4 border-[#7234F51A] rounded-lg relative bottom-24 bg-white">
           <div className="flex flex-col justify-center items-center text-center lg:py-32 py-5  px-9">
-            <img src={coins} alt="coins" className="mb-3" />
+            <img src={coins} alt="coins" className="mb-3" loading="lazy" />
             <h1 className="lg:text-7xl text-3xl font-extrabold max-w-lg mb-6">
               Trade BTC, ETH, & USDT.
             </h1>
@@ -108,9 +116,10 @@ export default function Features() {
               instantly.
             </p>
             <div className="mt-12 mb-6">
-              <span className="lg:px-16 lg:py-6 lg:text-base px-6 py-3  text-white text-sm bg-[#7234F5] rounded-full">
-                <Link>Get Started</Link>
-              </span>
+              <button className="flex items-center whitespace-nowrap border-none text-white bg-[#7234F5] lg:text-base text-sm lg:px-10 lg:py-5 px-6 py-3  rounded-full">
+                <Link> Get Started </Link>{" "}
+                <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+              </button>
             </div>
           </div>
         </div>
@@ -120,7 +129,12 @@ export default function Features() {
       <div className="max-w-6xl px-9 mx-auto py-6">
         <div className="flex flex-wrap gap-12 items-center justify-center">
           <div className="max-w-md">
-            <img src={iphone14pros} alt="iphone 14 cols" className="w-full" />
+            <img
+              src={iphone14pros}
+              alt="iphone 14 cols"
+              className="w-full"
+              loading="lazy"
+            />
           </div>
           <div className="max-w-lg flex flex-col lg:justify-normal justify-center lg:items-start items-center lg:text-start text-center">
             <h1 className="lg:text-5xl text-4xl font-bold mb-2">
@@ -131,9 +145,10 @@ export default function Features() {
               you.
             </p>
             <div className="mt-12 mb-6">
-              <span className="lg:px-16 lg:py-6 lg:text-base px-6 py-3  text-white text-sm bg-[#7234F5] rounded-full">
-                <Link>Get Started</Link>
-              </span>
+              <button className="flex items-center whitespace-nowrap border-none text-white bg-[#7234F5] lg:text-base text-sm lg:px-10 lg:py-5 px-6 py-3  rounded-full">
+                <Link> Get Started </Link>{" "}
+                <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+              </button>
             </div>
           </div>
         </div>
@@ -147,26 +162,31 @@ export default function Features() {
               <img
                 src={mtn}
                 alt="mtn"
+                loading="lazy"
                 className="lg:max-w-[170px] max-w-[70px] absolute lg:right-36 right-10"
               />
               <img
                 src={spectranet}
                 alt="spectranet"
+                loading="lazy"
                 className="lg:max-w-[170px] max-w-[70px] absolute lg:right-[30px] lg:-bottom-6 -right-3 bottom-14"
               />
               <img
                 src={dstv}
                 alt="coins"
+                loading="lazy"
                 className="lg:max-w-[170px] max-w-[70px] absolute lg:bottom-2 lg:-left-16 -left-2 bottom-16"
               />
               <img
                 src={bet}
                 alt="coins"
+                loading="lazy"
                 className="lg:max-w-[170px] max-w-[70px] absolute lg:-bottom-6 bottom-14 lg:left-14 left-8"
               />
               <img
                 src={ie}
                 alt="coins"
+                loading="lazy"
                 className="lg:max-w-[170px] max-w-[70px] absolute lg:left-40 left-20 "
               />
             </div>
@@ -177,19 +197,20 @@ export default function Features() {
               Stay active when you pay your bills with Hannah.
             </p>
             <div className="mt-12 mb-6">
-              <span className="lg:px-16 lg:py-6 lg:text-base px-6 py-3  text-white text-sm bg-[#7234F5] rounded-full">
-                <Link>Get Started</Link>
-              </span>
+              <button className="flex items-center whitespace-nowrap border-none text-white bg-[#7234F5] lg:text-base text-sm lg:px-10 lg:py-5 px-6 py-3  rounded-full">
+                <Link> Get Started </Link>{" "}
+                <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+              </button>
             </div>
           </div>
         </div>
       </div>
 
       <Slider />
-      
+
       {/* mookup image */}
       <div className="lg:mb-24 lg:mt-24 mb-20 mt-20">
-        <img src={mookup} alt="mookup" />
+        <img src={mookup} alt="mookup" loading="lazy" />
       </div>
 
       <div className="flex flex-col justify-center items-center">

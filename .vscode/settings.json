@@ -21,5 +21,6 @@
         "Trinune",
         "unauthorised",
         "utilising"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

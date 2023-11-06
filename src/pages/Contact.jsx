@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Whatsapp from "../assets/img/WhatsappLogo.svg"
 import twitter from "../assets/img/TwitterLogo.svg";
 import instagram from "../assets/img/InstagramLogo.svg";
+import { BsArrowRightShort } from 'react-icons/bs';
 
 export default function Contact() {
   return (
@@ -25,31 +26,42 @@ export default function Contact() {
             Request a feature, suggest an update, or help us fix a bug
           </p>
           <div className="mt-12 mb-6">
-            <span className="lg:px-16 lg:py-6 lg:text-base px-6 py-3  text-white text-sm bg-[#7234F5] rounded-full">
-              <Link>Send us an Email</Link>
-            </span>
+            
+            <button className="flex items-center whitespace-nowrap border-none text-white bg-[#7234F5] lg:text-base text-sm lg:px-16 lg:py-6 px-6 py-3  rounded-full">
+              <Link>Send us an Email</Link>{" "}
+              <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+            </button>
           </div>
         </div>
         <div className="px-9">
           <h1 className="text-4xl font-bold mb-3">Chat with us now</h1>
           <p className="mt-3">Send us questions, comments, or a poem</p>
           <div className="mt-12 mb-6">
-            <span className="lg:px-16 lg:py-6 lg:text-base px-6 py-3  text-white text-sm bg-[#7234F5] rounded-full">
-              <Link>Chat with a Live Support Agent</Link>
-            </span>
+            <button className="flex items-center whitespace-nowrap border-none text-white bg-[#7234F5] lg:text-base text-sm lg:px-16 lg:py-6 px-6 py-3  rounded-full">
+              <Link>Chat with a Live Support Agent</Link>{" "}
+              <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+            </button>
           </div>
         </div>
       </div>
 
       <div className="flex lg:gap-7 gap-4 mb-6 lg:pb-5 justify-center items-center mt-10 px-9">
         <button className="flex items-center whitespace-nowrap bg-white text-[#7234F5] lg:text-base text-sm lg:px-8 lg:py-5 px-3 py-2  rounded-full border-2 border-[#7234F51A] ">
-          Instagram <img src={instagram} alt="instagram" className="ml-3" />
+          Instagram{" "}
+          <img
+            src={instagram}
+            loading="lazy"
+            alt="instagram"
+            className="ml-3"
+          />
         </button>
         <button className="flex items-center whitespace-nowrap bg-white text-[#7234F5] lg:text-base text-sm lg:px-8 lg:py-5  px-3 py-2 rounded-full border-2 border-[#7234F51A]">
-          Twitter <img src={twitter} alt="twitter" className="ml-3" />
+          Twitter{" "}
+          <img src={twitter} loading="lazy" alt="twitter" className="ml-3" />
         </button>
         <button className="flex items-center whitespace-nowrap bg-white text-[#7234F5] lg:text-base text-sm lg:px-8 lg:py-5  px-3 py-2 rounded-full border-2 border-[#7234F51A]">
-          Whatsapp <img src={Whatsapp} alt="twitter" className="ml-3" />
+          Whatsapp{" "}
+          <img src={Whatsapp} loading="lazy" alt="twitter" className="ml-3" />
         </button>
       </div>
     </div>

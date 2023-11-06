@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import {FaGooglePlay} from "react-icons/fa"
 import { GrAppleAppStore } from "react-icons/gr";
 import { TfiWorld } from "react-icons/tfi";
+import {BsArrowRightShort} from "react-icons/bs"
 
 export default function Wallet(){
     return (
@@ -25,19 +26,22 @@ export default function Wallet(){
           <div className="bg-[#FEF3E4] rounded-2xl lg:max-w-lg md:max-w-md w-full">
             <div className="p-8 ">
               <div className="relative flex flex-col ml-auto  items-end mb-12">
-                <img src={toast} alt="" className="mb-5 " />
+                <img src={toast} alt="" className="mb-5" loading="lazy" />
                 <img
                   src={wallet}
                   alt="wallet"
+                  loading="lazy"
                   className="lg:max-w-xs items-end text-right "
                 />
                 <img
                   src={nairaleft}
                   alt="naira-left"
+                  loading="lazy"
                   className="lg:w-28 w-20 absolute -bottom-2"
                 />
                 <img
                   src={nairaright}
+                  loading="lazy"
                   alt="nairaright"
                   className="lg:w-28 w-20 absolute lg:left-0 left-0 lg:top-20 top-12 "
                 />
@@ -52,9 +56,10 @@ export default function Wallet(){
                   payout.
                 </p>
                 <div className="mt-12 mb-6 relative">
-                  <span className="lg:px-10 lg:py-6 lg:text-base px-6 py-3 text-sm bg-[#FFE6C4] rounded-full">
-                    <Link>Get Started </Link>
-                  </span>
+                  <button className="flex items-center whitespace-nowrap border-none bg-[#FFE6C4] text-black lg:text-base text-sm lg:px-10 lg:py-5 px-6 py-3  rounded-full">
+                    <Link> Get Started </Link>{" "}
+                    <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -62,7 +67,12 @@ export default function Wallet(){
           <div className="bg-[#F5F0FE] rounded-2xl lg:max-w-lg md:max-w-md w-full">
             <div className="">
               <div className="relative top-0 w-full lg:-mb-[110px] -mb-[10px]">
-                <img src={handbitcoin} alt="hand-bitcoin" className="w-full rounded-t-2xl"  />
+                <img
+                  loading="lazy"
+                  src={handbitcoin}
+                  alt="hand-bitcoin"
+                  className="w-full rounded-t-2xl"
+                />
               </div>
               <div className="px-8 pb-8">
                 <h1 className="font-bold lg:text-5xl text-4xl max-w-xs mb-5 ">
@@ -74,9 +84,10 @@ export default function Wallet(){
                   account.
                 </p>
                 <div className="mt-12 mb-6">
-                  <span className="lg:px-10 lg:py-6 lg:text-base px-6 py-3 text-sm bg-[#FFE6C4] rounded-full">
-                    <Link>Get Started</Link>
-                  </span>
+                  <button className="flex items-center whitespace-nowrap border-none bg-white text-[#7234F5] lg:text-base text-sm lg:px-10 lg:py-5 px-6 py-3  rounded-full">
+                    <Link> Get Started </Link>{" "}
+                    <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -85,7 +96,7 @@ export default function Wallet(){
 
         {/* mookup image */}
         <div className="lg:mb-24 lg:mt-24 mb-20 mt-20">
-          <img src={mookup} alt="mookup" />
+          <img src={mookup} alt="mookup" loading="lazy" />
         </div>
 
         <div className="flex flex-col justify-center items-center">

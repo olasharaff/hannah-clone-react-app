@@ -28,7 +28,7 @@ export default function Header() {
         <nav className="flex justify-between items-center max-w-6xl mx-auto px-6 py-10 ">
           <div>
             <Link to="/">
-              <img src={headerLogo} alt="Header-logo" />
+              <img src={headerLogo} alt="Header-logo" loading="lazy" />
             </Link>
           </div>
           <ul className="lg:flex items-center gap-7 hidden">

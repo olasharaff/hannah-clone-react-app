@@ -39,16 +39,52 @@ export default function GiftCard() {
             isAnimating ? "animate" : ""
           }`}
         >
-          <img className="lg:max-w-sm" src={steam} alt="steam-ebay" />
-          <img className="lg:max-w-md" src={bitcoin} alt="bitcoin-van-seph" />
-          <img className="lg:max-w-lg" src={nord} alt="Nord-razor-nike" />
-          <img className="lg:w-96" src={itunes} alt="Itunes-google" />
-          <img className="lg:max-w-lg" src={americaW} alt="americaW" />
-          <img className="lg:w-96" src={americaT} alt="americaT" />
+          <img
+            loading="lazy"
+            className="lg:max-w-sm"
+            src={steam}
+            alt="steam-ebay"
+          />
+          <img
+            loading="lazy"
+            className="lg:max-w-md"
+            src={bitcoin}
+            alt="bitcoin-van-seph"
+          />
+          <img
+            loading="lazy"
+            className="lg:max-w-lg"
+            src={nord}
+            alt="Nord-razor-nike"
+          />
+          <img
+            loading="lazy"
+            className="lg:w-96"
+            src={itunes}
+            alt="Itunes-google"
+          />
+          <img
+            loading="lazy"
+            className="lg:max-w-lg"
+            src={americaW}
+            alt="americaW"
+          />
+          <img
+            loading="lazy"
+            className="lg:w-96"
+            src={americaT}
+            alt="americaT"
+          />
         </div>
         <div className="flex px-9 justify-center items-center gap-4 mb-6 mt-16">
-          <img className="lg:w-[150px] w-10" src={punch} alt="steam-ebay" />
           <img
+            loading="lazy"
+            className="lg:w-[150px] w-10"
+            src={punch}
+            alt="steam-ebay"
+          />
+          <img
+            loading="lazy"
             className="lg:w-[150px] w-10"
             src={tribune}
             alt="bitcoin-van-seph"
@@ -57,9 +93,20 @@ export default function GiftCard() {
             className="lg:w-[150px] w-10"
             src={legit}
             alt="Nord-razor-nike"
+            loading="lazy"
           />
-          <img className="lg:w-[150px] w-10" src={premium} alt="Itunes-google" />
-          <img className="lg:w-[200px] w-10" src={Techcabal} alt="americaW" />
+          <img
+            className="lg:w-[150px] w-10"
+            src={premium}
+            loading="lazy"
+            alt="Itunes-google"
+          />
+          <img
+            loading="lazy"
+             className="lg:w-[200px] w-10"
+            src={Techcabal}
+            alt="americaW"
+          />
         </div>
       </div>
     </section>
