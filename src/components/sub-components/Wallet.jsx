@@ -12,7 +12,7 @@ import { TfiWorld } from "react-icons/tfi";
 export default function Wallet(){
     return (
       <section className="max-w-6xl px-9 mx-auto my-16">
-        <div className="text-center">
+        <div className="text-center lg:mb-20 mb-10">
           <h1 className="font-extrabold text-4xl mb-3">
             Get started with Hannah.
           </h1>
@@ -22,7 +22,7 @@ export default function Wallet(){
           </p>
         </div>
         <div className="flex flex-wrap gap-5 justify-center items-center">
-          <div className="bg-[#FEF3E4] rounded lg:max-w-lg md:max-w-md w-full">
+          <div className="bg-[#FEF3E4] rounded-2xl lg:max-w-lg md:max-w-md w-full">
             <div className="p-8 ">
               <div className="relative flex flex-col ml-auto  items-end mb-12">
                 <img src={toast} alt="" className="mb-5 " />
@@ -59,13 +59,13 @@ export default function Wallet(){
               </div>
             </div>
           </div>
-          <div className="bg-[#F5F0FE] rounded lg:max-w-lg md:max-w-md w-full">
-            <div className="p-8">
-              <div className="relative top-3 lg:max-w-sm -mb-[50px]">
-                <img src={handbitcoin} alt="hand-bitcoin" className="w-full" />
+          <div className="bg-[#F5F0FE] rounded-2xl lg:max-w-lg md:max-w-md w-full">
+            <div className="">
+              <div className="relative top-0 w-full lg:-mb-[110px] -mb-[10px]">
+                <img src={handbitcoin} alt="hand-bitcoin" className="w-full rounded-t-2xl"  />
               </div>
-              <div className="">
-                <h1 className="font-bold lg:text-5xl text-4xl max-w-xs mb-9 ">
+              <div className="px-8 pb-8">
+                <h1 className="font-bold lg:text-5xl text-4xl max-w-xs mb-5 ">
                   Be In Complete Control.
                 </h1>
                 <p className="text-sm">

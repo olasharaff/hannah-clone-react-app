@@ -90,3 +90,22 @@ font-family: 'Diagramm', sans-serif;
         transform: translateX(-100%) translateY(10px);
     }
 }
+
+.hero-img {
+    transition: width 0.5s;
+    /* Add a smooth transition effect */
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        width: 80%;
+        /* Adjust the size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        width: 70%;
+        /* Further adjust the size for even smaller screens */
+    }
+}

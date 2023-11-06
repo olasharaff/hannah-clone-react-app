@@ -72,7 +72,7 @@ useEffect(() => {
       <div className="bg-[#7234F5] home-style">
         <div className="max-w-6xl mx-auto px-6  flex ">
           {HomeDatas1.map((item, index) => (
-            <div key={index} className="flex flex-wrap gap-3 mt-10">
+            <div key={index} className="flex flex-wrap gap-2 mt-10">
               <div>
                 <h1 className="text-white text-5xl font-bold mb-4">
                   {item.heroheader}
@@ -95,8 +95,13 @@ useEffect(() => {
                   </button>
                 </div>
               </div>
-              <div className="lg:max-w-sm max-w-xs relative z-20">
-                <img src={heroImg} alt="iphone14" className="w-full" />
+              <div className="lg:max-w-md max-w-sm  relative z-20 lg:top-0 top-10">
+                <img
+                  src={heroImg}
+                  alt="iphone14"
+                  loading="lazy"
+                  className="w-full hero-img"
+                />
               </div>
             </div>
           ))}
@@ -104,14 +109,14 @@ useEffect(() => {
       </div>
       {/* SECTION 2 */}
       <section className="px-6">
-        <div className="mx-auto bg-white rounded-md max-w-6xl relative bottom-20 mb-6 ">
+        <div className="mx-auto lg:bg-white bg-gray-50 rounded-md max-w-6xl relative lg:bottom-20 -bottom-14 lg:mb-6 mb-36 ">
           <div className=" border-b border-gray-300">
             <h1 className="px-9 py-7 font-bold text-3xl">Our Rates</h1>
             <div className="flex gap-7 mt-6 mb-5 px-9 flex-wrap">
-              <button className="flex items-center whitespace-nowrap bg-white border border-gray-300 text-[#7234F5] lg:px-7 lg:py-4 px-3 py-2  rounded-full">
-                <FaGooglePlay className="lg:mr-3 " /> Gift Card
+              <button className="flex items-center whitespace-nowrap lg:text-base text-sm bg-white border border-gray-300 text-[#7234F5] lg:px-7 lg:py-4 px-4 py-2  rounded-full">
+                <FaGooglePlay className="mr-3 " /> Gift Card
               </button>
-              <button className="flex items-center whitespace-nowrap bg-white border border-gray-300 text-[#7234F5] lg:px-7 lg:py-4 px-3 py-2 rounded-full">
+              <button className="flex items-center whitespace-nowrap lg:text-base text-sm bg-white border border-gray-300 text-[#7234F5] lg:px-7 lg:py-4 px-5 py-2 rounded-full">
                 <GrAppleAppStore className="mr-3" /> Crypto
               </button>
             </div>
@@ -127,7 +132,7 @@ useEffect(() => {
                 id="dropdown"
                 value={selectedOption}
                 onChange={handleSelectChange}
-                className="border p-2 lg:w-[300px] w-[250px] h-10 mt-3"
+                className="border p-2 lg:w-[300px] w-full sm:w-[250px] h-10 mt-3"
                 disabled
               >
                 <option value="">Select...</option>
@@ -145,7 +150,7 @@ useEffect(() => {
                 id="dropdown"
                 value={selectedOption}
                 onChange={handleSelectChange}
-                className="border p-2 lg:w-[300px] w-[250px] h-10 mt-3"
+                className="border p-2 lg:w-[300px] w-full sm:w-[250px] h-10 mt-3"
                 disabled
               >
                 <option value="">Select...</option>
@@ -204,10 +209,7 @@ useEffect(() => {
                   How much you would get
                 </h1>
                 <p className="lg:text-5xl text-lg font-bold text-gray-300">
-                  ₦
-                  {isHowMuch
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  ₦{isHowMuch.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                   .00
                 </p>
               </div>
