@@ -18,7 +18,7 @@ export default function Faqs() {
     setSecOpen(newSecOpen)
   }
     return (
-      <div>
+      <div className="lg:mt-[13%] mt-[40%]">
         <div className="max-w-6xl px-6 mx-auto my-20">
           <h1 className="text-base font-bold mb-6 text-[#7234F5]">FAQs</h1>
           <p className="lg:text-5xl font-bold text-3xl">

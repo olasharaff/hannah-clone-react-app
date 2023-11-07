@@ -17,7 +17,7 @@ export default function About() {
     return () => clearTimeout(animationTimer);
   }, []);
   return (
-    <div>
+    <div className="lg:mt-[12%] mt-[18%]">
       <div className="max-w-3xl lg:pl-20 pl-5 my-7 pr-6">
         <h1 className="text-[#7234F5] mb-6">ABOUT US </h1>
         <p className="lg:text-6xl text-2xl font-bold ">
@@ -43,10 +43,26 @@ export default function About() {
           src={bitcoin}
           alt="bitcoin-van-seph"
         />
-        <img   loading="lazy" className="lg:max-w-lg" src={nord} alt="Nord-razor-nike" />
-        <img   loading="lazy" className="lg:w-96" src={itunes} alt="Itunes-google" />
-        <img   loading="lazy" className="lg:max-w-lg" src={americaW} alt="americaW" />
-        <img  loading="lazy" 
+        <img
+          loading="lazy"
+          className="lg:max-w-lg"
+          src={nord}
+          alt="Nord-razor-nike"
+        />
+        <img
+          loading="lazy"
+          className="lg:w-96"
+          src={itunes}
+          alt="Itunes-google"
+        />
+        <img
+          loading="lazy"
+          className="lg:max-w-lg"
+          src={americaW}
+          alt="americaW"
+        />
+        <img
+          loading="lazy"
           className="lg:max-w-xs max-w-[200px]"
           src={americaT}
           alt="americaT"

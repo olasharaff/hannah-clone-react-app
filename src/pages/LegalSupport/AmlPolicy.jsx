@@ -3,12 +3,12 @@ import React from 'react'
 export default function AmlPolicy() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-9 mt-24">
+      <div className="max-w-6xl mx-auto px-9 lg:mt-[19%] mt-[45%]">
         <cite className="text-base font-bold text-[#7234F5]">
-          Last Updated - July 1, 2023 
+          Last Updated - July 1, 2023
         </cite>
-        <h1 className="mb-6 mt-6 text-4xl font-extrabold ">AML Policy</h1> 
-        <h2 className="mb-3 mt-6 text-2xl font-extrabold ">Introduction</h2> 
+        <h1 className="mb-6 mt-6 text-4xl font-extrabold ">AML Policy</h1>
+        <h2 className="mb-3 mt-6 text-2xl font-extrabold ">Introduction</h2>
         <h3 className="mb-4 text-sm">
           Money laundering is the attempt to conceal or disguise the nature,
           location, source, ownership or control of illegally obtained money.
@@ -45,7 +45,7 @@ export default function AmlPolicy() {
         </h3>
         <h2 className="mb-3 mt-6 text-2xl font-extrabold ">
           (i) Compliance officer
-        </h2> 
+        </h2>
         <p className="mb-4 text-sm">
           Coordinating and monitoring day-to-day compliance with the relevant
           legislation, regulations, rules and industry guidance and applicable
@@ -57,7 +57,7 @@ export default function AmlPolicy() {
         </p>
         <h2 className="mb-3 mt-6 text-2xl font-extrabold ">
           (ii) Risk committee
-        </h2> 
+        </h2>
         <p className="mb-4 text-sm">
           The appointment of an independent risk committee which reports to our
           board of directors regularly on all risk and compliance matters using
@@ -77,10 +77,10 @@ export default function AmlPolicy() {
           will deter criminals from using its facilities for money laundering
           and terrorist financing and to ensure that its obligations under
           subsisting laws and Regulations are met.
-        </p> 
+        </p>
         <h2 className="mb-3 mt-6 text-2xl font-extrabold ">
           (iv) Know your customers
-        </h2> 
+        </h2>
         <p className="mb-4 text-sm">
           Establishing and maintaining a risk-based approach to Customer Due
           Diligence (CDD), including customer identification, verification and
@@ -98,7 +98,7 @@ export default function AmlPolicy() {
           Regulations as well as other relevant
           Regulations/Act/Guidelines/Circulars that may be issued from time to
           time by various government agencies.
-        </p> 
+        </p>
         <p className="text-sm">
           We shall exercise due diligence in identifying and reporting a
           suspicious transaction. Suspicious transactions shall include:
@@ -109,7 +109,7 @@ export default function AmlPolicy() {
           information or any transaction involving criminal activity in Hannah's
           view Entity that belongs to a person or organisation considered as
           terrorist.
-        </p> 
+        </p>
         <p className="mb-4 text-sm">
           Hannah shall also provide training on the framework and raising
           awareness among all relevant employees and every Settlement proceeds

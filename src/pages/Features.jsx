@@ -26,7 +26,7 @@ export default function Features() {
   return (
     <section>
       {/* SECTION 1 */}
-      <main className="feature-main">
+      <main className="feature-main lg:mt-[9%] mt-[19%]">
         <div className="max-w-6xl px-9 mx-auto py-9">
           <div className="flex lg:flex-nowrap flex-wrap mb-6  ">
             <div className="relative z-50 w-full">

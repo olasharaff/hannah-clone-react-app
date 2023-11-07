@@ -10,21 +10,23 @@ export default function Footer() {
     <footer className="max-w-6xl mx-auto px-6 mb-9 mt-5">
       <div className="flex lg:text-none lg:justify-between justify-center mb-8 flex-wrap w-full">
         <div className="lg:max-w-[350px] max-w-sm flex lg:justify-normal lg:text-start text-center justify-center flex-col mb-6 ">
-          <img
-            src={footer}
-            alt="footer-logo"
-            loading="lazy"
-            className="lg:mb-6 mb-2 lg:w-[100px] text-center"
-          />
+          <div className="footer-logo">
+            <img
+              src={footer}
+              alt="footer-logo"
+              loading="lazy"
+              className="lg:mb-6 mb-2 lg:w-[100px] text-center"
+            />
+          </div>
           <h1 className="lg:text-lg text-md">
             Hannah allows you to convert your gift cards & crypto to cash
             instantly.
           </h1>
         </div>
         <div className="flex lg:gap-12 gap-5 flex-wrap ">
-          <div className="lg:my-0 my-3 lg:w-32 w-40">
-            <h1 className="font-semibold mb-6">Features</h1>
-            <ul className="text-sm">
+          <div className=" lg:w-32 w-24">
+            <h1 className="font-semibold lg:mb-6 mb-3">Features</h1>
+            <ul className="lg:text-sm text-xs">
               <li className="mb-3">
                 <Link to="/">Buy Gift cards</Link>
               </li>
@@ -39,9 +41,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="lg:my-0 my-3 lg:w-32 w-40">
-            <h1 className="font-semibold mb-6">Company</h1>
-            <ul className="text-sm">
+          <div className=" lg:w-32 w-24">
+            <h1 className="font-semibold lg:mb-6 mb-3">Company</h1>
+            <ul className="lg:text-sm text-xs">
               <li className="mb-3">
                 <Link to="/about">About</Link>
               </li>
@@ -50,9 +52,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="lg:my-0 my-3 lg:w-32 w-40">
-            <h1 className="font-semibold mb-6">Legal</h1>
-            <ul className=" text-sm">
+          <div className=" lg:w-32 w-24">
+            <h1 className="font-semibold lg:mb-6 mb-3">Legal</h1>
+            <ul className=" lg:text-sm text-xs">
               <li className="mb-3">
                 <Link to="/term">Terms</Link>
               </li>
@@ -64,9 +66,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="lg:my-0 my-3 lg:w-32 w-40">
-            <h1 className="font-semibold mb-6">Support</h1>
-            <ul className="text-sm">
+          <div className="lg:w-32 w-24">
+            <h1 className="font-semibold lg:mb-6 mb-3">Support</h1>
+            <ul className="lg:text-sm text-xs">
               <li className="mb-3">
                 <Link to="/404">FAQs</Link>
               </li>
@@ -77,23 +79,26 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <attribution className="flex lg:justify-between items-center flex-wrap justify-center">
+      <attribution className="flex lg:justify-between items-center flex-wrap justify-center text-center">
         <div>
           <p>© 2023 Hannah Technologies, Inc.</p>
         </div>
-        <div className="flex items-center justify-center flex-wrap ml-4 gap-7">
-          <div className="flex gap-7 lg:my-0 my-4">
-            <Fa.FaInstagram className="text-gray-500 text-xl" />{" "}
-            <Fa.FaTwitter className="text-gray-500 text-xl" />{" "}
-            <Fa.FaWhatsapp className="text-gray-500 text-xl" />{" "}
-            <Fa.FaFacebook className="text-gray-500 text-xl" />
+        <div className="flex items-center justify-center flex-wrap lg:ml-4 ml-4 lg:gap-7 gap-4 main-attribute">
+          <div className="flex gap-7 mb-0  sec-attribute">
+            <Fa.FaInstagram className="text-gray-500 text-xl hover:text-pink-400 hover:text-3xl transition-all duration-300 ease-in-out cursor-pointer" />{" "}
+            <Fa.FaTwitter
+              className="text-gray-500 text-xl hover:text-black hover:text-3xl transition-all duration-300 ease-in-out cursor-pointer"
+              cursor-pointer
+            />{" "}
+            <Fa.FaWhatsapp className="text-gray-500 text-xl hover:text-green-600 hover:text-3xl transition-all duration-300 ease-in-out cursor-pointer" />{" "}
+            <Fa.FaFacebook className="text-gray-500 text-xl hover:text-blue-600 hover:text-3xl transition-all duration-300 ease-in-out cursor-pointer" />
           </div>
-          <div className="flex lg:gap-2 gap-4">
-            <button className="flex items-center whitespace-nowrap bg-black text-white lg:px-8 lg:py-4 px-5 py-3  rounded-full">
-              Android <Fa.FaGooglePlay className="ml-3" />
+          <div className="flex lg:gap-2 gap-4 third-attribute">
+            <button className="flex items-center whitespace-nowrap lg:text-base text-sm bg-black text-white lg:px-8 lg:py-4 px-5 py-3  rounded-full">
+              Android <Fa.FaGooglePlay className="ml-3 cursor-pointer" />
             </button>
-            <button className="flex items-center whitespace-nowrap bg-black text-white lg:px-8 lg:py-4 px-5 py-3 rounded-full">
-              iOS <GrAppleAppStore className="ml-3" />
+            <button className="flex items-center whitespace-nowrap lg:text-base text-sm bg-black text-white lg:px-8 lg:py-4 px-5 py-3 rounded-full">
+              iOS <GrAppleAppStore className="ml-3 cursor-pointer" />
             </button>
           </div>
         </div>

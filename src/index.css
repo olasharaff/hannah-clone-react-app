@@ -8,6 +8,16 @@
 body{
 font-family: 'Diagramm', sans-serif;
 }
+
+.navbar-header{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top: 0;
+    filter:transparent(1rem);
+    
+}
+
 .home-style{
     background-image: url('./assets/img/BG.svg');
     background-position: cover;
@@ -95,12 +105,33 @@ font-family: 'Diagramm', sans-serif;
     transition: width 0.5s;
     /* Add a smooth transition effect */
 }
+@media (max-width: 875px){
+    .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            width: 100%;
+        }
+       
 
+}
 @media (max-width: 768px) {
     .hero-img {
         width: 80%;
         /* Adjust the size for smaller screens */
     }
+   .footer-logo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 400px;
+       width: 100%;
+   }
+  .main-attribute{
+    margin-top: 20px;
+  }
+   
     .notfound-img {
         width: 60%;
     }
@@ -114,4 +145,11 @@ font-family: 'Diagramm', sans-serif;
          .notfound-img {
              width: 70%;
          }
+                  .footer-logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 300px;
+                      width: 100%;
+                  }
 }

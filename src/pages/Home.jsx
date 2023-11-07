@@ -68,7 +68,7 @@ useEffect(() => {
     setSelectedOption(event.target.value);
   }
   return (
-    <main className="relative">
+    <main className="relative lg:mt-[9%] mt-[19%]">
       <div className="bg-[#7234F5] home-style">
         <div className="max-w-6xl mx-auto px-6  flex ">
           {HomeDatas1.map((item, index) => (

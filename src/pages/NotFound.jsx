@@ -10,7 +10,7 @@ export default function NotFound() {
 
   }
   return (
-    <div className="max-w-6xl px-9 mx-auto mt-20 mb-28">
+    <div className="max-w-6xl px-9 mx-auto  mb-28 mt-[15%]">
       <div className="flex justify-center items-center">
         <img
           src={notfound}

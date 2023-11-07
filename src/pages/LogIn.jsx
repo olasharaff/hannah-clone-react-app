@@ -17,7 +17,7 @@ export default function LogIn() {
     e.preventDefault()
   }
   return (
-    <div className="max-w-6xl px-9 mx-auto mt-9">
+    <div className="max-w-6xl px-9 mx-auto lg:mt-[19%] mt-[20%]">
       <div className="flex flex-col justify-center items-center">
         <h1 className="lg:mb-28 mb-10">Login</h1>
         <Link

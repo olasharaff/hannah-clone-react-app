@@ -24,7 +24,7 @@ export default function Header() {
   
   return (
     <>
-      <header className="bg-[#7234F5] text-white border-b border-gray-400">
+      <header className="bg-[#7234F5] text-white border-b border-gray-400 navbar-header">
         <nav className="flex justify-between items-center max-w-6xl mx-auto px-6 py-10 ">
           <div>
             <Link to="/">

@@ -7,7 +7,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 
 export default function Contact() {
   return (
-    <div>
+    <div className="lg:mt-[13%] mt-[40%]">
       <div className="max-w-6xl px-6 mx-auto my-20">
         <h1 className="text-base font-bold mb-6 text-[#7234F5]"> CONTACT US</h1>
         <p className="lg:text-5xl font-bold text-3xl mb-5">
@@ -26,7 +26,6 @@ export default function Contact() {
             Request a feature, suggest an update, or help us fix a bug
           </p>
           <div className="mt-12 mb-6">
-            
             <button className="flex items-center whitespace-nowrap border-none text-white bg-[#7234F5] lg:text-base text-sm lg:px-16 lg:py-6 px-6 py-3  rounded-full">
               <Link>Send us an Email</Link>{" "}
               <BsArrowRightShort className="ml-3 lg:text-2xl text-base" />

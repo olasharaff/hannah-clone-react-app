@@ -3,7 +3,7 @@ import React from 'react'
 export default function Terms() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-9 mt-24">
+      <div className="max-w-6xl mx-auto px-9 lg:mt-[19%] mt-[45%]">
         <cite className="text-base font-bold text-[#7234F5]">
           Last Updated - July 1, 2023{" "}
         </cite>

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function PrivacyPolicy() {
   return (
-    <section>
-      <div className="max-w-6xl mx-auto px-9 mt-24">
+    <section className="lg:mt-[19%] mt-[45%]">
+      <div className="max-w-6xl mx-auto px-9 ">
         <cite className="text-base font-bold text-[#7234F5]">
           Last Updated – Jan 9, 2023
         </cite>
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
           will collect, use and share your information as described in this
           Privacy Policy.
         </p>
-        <div className="mb-10" >
+        <div className="mb-10">
           <h1 className="mb-4 text-2xl font-bold">Data</h1>
           <p className="mb-4 text-sm">
             Personal data or personal information, means any information about
@@ -96,7 +96,7 @@ export default function PrivacyPolicy() {
           </p>
         </div>
         {/* DISCLOSURE OF PERSONAL DATA */}
-        <div className="mb-10" >
+        <div className="mb-10">
           <h1 className="mb-4 text-2xl font-bold">
             Disclosure of your personal data
           </h1>
@@ -158,7 +158,7 @@ export default function PrivacyPolicy() {
         </div>
 
         {/* Use of cookies and similar technologies */}
-        <div className="mb-10" >
+        <div className="mb-10">
           <h1 className="mb-4 text-2xl font-bold">
             Use of cookies and similar technologies
           </h1>
@@ -190,7 +190,7 @@ export default function PrivacyPolicy() {
         </div>
 
         {/*Third party websites  */}
-        <div className="mb-10" >
+        <div className="mb-10">
           <h1 className="mb-4 text-2xl font-bold">Third party websites </h1>
           <h2 className="mb-4 text-base">
             The Hannah Platform may contain links to third-party websites and
@@ -216,7 +216,7 @@ export default function PrivacyPolicy() {
         </div>
 
         {/* Data security */}
-        <div className="mb-10" >
+        <div className="mb-10">
           <h1 className="mb-4 text-2xl font-bold">Data security</h1>
           <h2 className="mb-4 text-base">
             We have put in place appropriate security measures (and
@@ -246,7 +246,7 @@ export default function PrivacyPolicy() {
         </div>
 
         {/*  Retention of personal data */}
-        <div className="mb-10" >
+        <div className="mb-10">
           <h1 className="mb-4 text-2xl font-bold">
             Retention of personal data
           </h1>
@@ -273,7 +273,7 @@ export default function PrivacyPolicy() {
         </div>
 
         {/* Your rights */}
-        <div className="mb-10" >
+        <div className="mb-10">
           <h1 className="mb-4 text-2xl font-bold">Your rights</h1>
           <h2 className="mb-2 text-base">
             Under certain circumstances, you can exercise certain rights

@@ -26,10 +26,13 @@ export default function Register() {
   }
   return (
     <>
-      <div className="max-w-6xl px-9 mx-auto mt-9">
+      <div className="max-w-6xl px-9 mx-auto lg:mt-[10%] mt-[20%]">
         <div className="flex flex-col justify-center items-center">
           <h1 className="mb-10">Create an account </h1>
-          <Link to="/" className="fixed top-10 left-5 text-xl hover:border-8 hover:border-[#7234F51A] hover:rounded-full p-2 ">
+          <Link
+            to="/"
+            className="fixed top-10 left-5 text-xl hover:border-8 hover:border-[#7234F51A] hover:rounded-full p-2 "
+          >
             <BsArrow90DegLeft />
           </Link>
 
